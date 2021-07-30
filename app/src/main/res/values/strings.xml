@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pitomnik application</string>
+    <string name="login_activity_main_label">Pitomnik BELKA</string>
+    <string name="login_activity_login_button">LogIn</string>
+    <string name="login_activity_signup_button">SignUp</string>
+    <string name="hint_phone">phone</string>
+    <string name="hint_password">password</string>
+    <string name="hint_name">name</string>
+    <string name="hint_surname">surname</string>
+    <string name="hint_email">e-mail</string>
+    <string name="hint_password_validation">repeat password</string>
+</resources>
