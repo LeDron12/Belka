@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_1">
 
-        <activity android:name=".ActivityMainLenta"></activity>
-
-        <activity android:name=".ActivitySignUpMenu" />
-
-        <activity android:name=".ActivityLogInMenu">
+        <activity android:name=".ActivityLoadingScreen" android:theme="@style/LoadingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,6 +18,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ActivityMainLenta" android:theme="@style/NoNavbar"></activity>
+
+        <activity android:name=".ActivitySignUpMenu" />
+
+        <activity android:name=".ActivityLogInMenu" />
     </application>
 
 </manifest>

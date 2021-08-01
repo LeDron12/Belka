@@ -8,12 +8,11 @@ import com.example.app_1.databinding.ActivityLogInMenuBinding
 
 class ActivityLogInMenu : AppCompatActivity() {
 
-    private var logInScreen : ActivityLogInMenuBinding = ActivityLogInMenuBinding.inflate(layoutInflater)
-    val govno = findViewById<Button>(R.id.buttonLogIn)
-
+    private lateinit var logInScreen : ActivityLogInMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        logInScreen = ActivityLogInMenuBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(logInScreen.root)
 
