@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import com.example.app_1.databinding.ActivityLogInMenuBinding
 
 class ActivityLogInMenu : AppCompatActivity() {
@@ -19,7 +18,9 @@ class ActivityLogInMenu : AppCompatActivity() {
         setContentView(logInScreen.root)
 
         logInScreen.textSignUp.setOnClickListener {
-            startActivity(Intent(this, ActivitySignUpMenu::class.java))
+            val logInAct = Intent(this, ActivitySignUpMenu::class.java)
+            //logInAct.putExtra("phone", logInScreen.editTextLogInPhone.text.toString())
+            startActivity(logInAct)
         }
 
         logInScreen.buttonLogIn.setOnClickListener {

@@ -14,6 +14,7 @@ class ActivitySignUpMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         signUpScreen = ActivitySignUpMenuBinding.inflate(layoutInflater)
         setContentView(signUpScreen.root)
+        //signUpScreen.editTextSignUpPhone.text = intent.get("phone")
 
         signUpScreen.textFinnishButton.setOnClickListener {
             this.finish()
