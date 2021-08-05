@@ -17,13 +17,13 @@ class ActivityLogInMenu : AppCompatActivity() {
         setContentView(logInScreen.root)
 
         logInScreen.textSignUp.setOnClickListener {
-            val logInAct = Intent(this, ActivitySignUpMenu::class.java)
-            //logInAct.putExtra("phone", logInScreen.editTextLogInPhone.text.toString())
-            startActivity(logInAct)
+            val signUpOpen = Intent(this, ActivitySignUpMenu::class.java)
+            startActivity(signUpOpen)
         }
 
         logInScreen.buttonLogIn.setOnClickListener {
-            // LogIn through account.
+            val mainLentaOpen = Intent(this, ActivityMainLenta::class.java)
+            startActivity(mainLentaOpen)
         }
 
 

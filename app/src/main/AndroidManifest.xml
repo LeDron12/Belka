@@ -20,9 +20,9 @@
 
         <activity android:name=".ActivityMainLenta" android:theme="@style/NoNavbar"></activity>
 
-        <activity android:name=".ActivitySignUpMenu" />
+        <activity android:name=".ActivitySignUpMenu" android:theme="@style/NoNavbar"/>
 
-        <activity android:name=".ActivityLogInMenu" />
+        <activity android:name=".ActivityLogInMenu" android:theme="@style/NoNavbar"/>
     </application>
 
 </manifest>

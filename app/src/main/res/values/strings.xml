@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Pitomnik application</string>
-    <string name="login_activity_main_label">Pitomnik BELKA</string>
+    <string name="login_activity_main_label">
+       El.Ectrico <br/>
+        company
+    </string>
     <string name="login_activity_login_button">LogIn</string>
     <string name="login_activity_signup_button">SignUp</string>
     <string name="hint_phone">phone</string>
