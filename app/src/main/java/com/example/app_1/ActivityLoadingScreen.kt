@@ -19,10 +19,12 @@ class ActivityLoadingScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(loadingScreen.root)
 
+        // progressBar animation.
         ObjectAnimator.ofInt(loadingScreen.progressBar, "progress", loadingScreen.progressBar.max)
             .setDuration((loadingTime * 0.9).toLong())
             .start()
 
+        // current activity delay.
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, ActivityLogInMenu::class.java))
             finish()
