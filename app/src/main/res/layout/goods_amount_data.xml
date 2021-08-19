@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C6C6">
+
+    <TextView
+        android:id="@+id/tvAviliable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доступно:  "
+        app:layout_constraintEnd_toEndOf="@+id/tvReserved1"
+        app:layout_constraintStart_toStartOf="@+id/tvReserved1"
+        app:layout_constraintTop_toBottomOf="@+id/tvReserved1" />
+
+    <TextView
+        android:id="@+id/tvReserved1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Резерв:       "
+        app:layout_constraintEnd_toEndOf="@+id/tvCity1"
+        app:layout_constraintStart_toStartOf="@+id/tvCity1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity1" />
+
+    <TextView
+        android:id="@+id/tvCity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Город:         "
+        app:layout_constraintEnd_toEndOf="@+id/tvBarCode1"
+        app:layout_constraintStart_toStartOf="@+id/tvBarCode1"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarCode1" />
+
+    <TextView
+        android:id="@+id/tvBarCode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Артикул:     "
+        app:layout_constraintEnd_toEndOf="@+id/tvDecxription1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDecxription1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDecxription1" />
+
+    <TextView
+        android:id="@+id/tvBarcode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Штрихкод: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDecxription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание:  "
+        app:layout_constraintEnd_toEndOf="@+id/tvBarcode1"
+        app:layout_constraintStart_toStartOf="@+id/tvBarcode1"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarcode1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

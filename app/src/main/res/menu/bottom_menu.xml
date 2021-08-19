@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newsButton"
+        android:icon="@drawable/ic_news"
+        android:title="Новости"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/catalog"
+        android:icon="@drawable/ic_catalog"
+        android:title="Каталог"
+        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/myOrders"
+        android:icon="@drawable/ic_orders"
+        android:title="Мои заказы"
+        android:orderInCategory="3"/>
+    <item
+        android:id="@+id/excelPrices"
+        android:icon="@drawable/ic_prices"
+        android:title="Прайс лист"
+        android:orderInCategory="4"/>
+    <item
+        android:id="@+id/excelLeftovers"
+        android:icon="@drawable/ic_leftovers"
+        android:title="Остатки"
+        android:orderInCategory="5"/>
+</menu>
