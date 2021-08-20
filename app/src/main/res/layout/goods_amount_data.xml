@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
     android:background="#C6C6C6">
 
     <TextView
@@ -29,12 +30,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Город:         "
-        app:layout_constraintEnd_toEndOf="@+id/tvBarCode1"
-        app:layout_constraintStart_toStartOf="@+id/tvBarCode1"
-        app:layout_constraintTop_toBottomOf="@+id/tvBarCode1" />
+        app:layout_constraintEnd_toEndOf="@+id/tvVendorCode1"
+        app:layout_constraintStart_toStartOf="@+id/tvVendorCode1"
+        app:layout_constraintTop_toBottomOf="@+id/tvVendorCode1" />
 
     <TextView
-        android:id="@+id/tvBarCode1"
+        android:id="@+id/tvVendorCode1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Артикул:     "
@@ -44,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvDecxription1" />
 
     <TextView
-        android:id="@+id/tvBarcode1"
+        android:id="@+id/tvBarCode1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -58,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Описание:  "
-        app:layout_constraintEnd_toEndOf="@+id/tvBarcode1"
-        app:layout_constraintStart_toStartOf="@+id/tvBarcode1"
-        app:layout_constraintTop_toBottomOf="@+id/tvBarcode1" />
+        app:layout_constraintEnd_toEndOf="@+id/tvBarCode1"
+        app:layout_constraintStart_toStartOf="@+id/tvBarCode1"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarCode1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,12 @@
 package com.example.app_1
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app_1.databinding.ActivityMainLentaBinding
 import org.jsoup.Jsoup
@@ -22,7 +25,17 @@ class ActivityMainLenta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainLentaScreen = ActivityMainLentaBinding.inflate(layoutInflater)
         setContentView(mainLentaScreen.root)
+
         AsyncTaskExample(this).execute()
+
+        mainLentaScreen.bottomNavigation.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.excelLeftovers ->{
+                    val intent = Intent(this, ActivityGoodsAmount::class.java)
+                    startActivity(intent)
+                }
+            }
+        }
     }
 
     @SuppressLint("StaticFieldLeak")

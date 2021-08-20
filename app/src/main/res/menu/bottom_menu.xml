@@ -23,6 +23,6 @@
     <item
         android:id="@+id/excelLeftovers"
         android:icon="@drawable/ic_leftovers"
-        android:title="Остатки"
-        android:orderInCategory="5"/>
+        android:orderInCategory="5"
+        android:title="Остатки" />
 </menu>
