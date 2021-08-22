@@ -20,7 +20,7 @@ class AdapterGoodsAmount : RecyclerView.Adapter<AdapterGoodsAmount.GoodsHolder>(
 
     val productList = ArrayList<ProductData>() //Fill array from excel
     val asyncHttpClient : AsyncHttpClient = AsyncHttpClient()
-    lateinit var workbook
+    //lateinit var workbook
 
     class GoodsHolder(view : View) : RecyclerView.ViewHolder(view){
 
@@ -50,7 +50,7 @@ class AdapterGoodsAmount : RecyclerView.Adapter<AdapterGoodsAmount.GoodsHolder>(
     }
 
     // TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO
-    fun fillList(){
+    /*fun fillList(){
         val URL : String = "https://github.com/LeDron12/Wolta/blob/master/Остатки.xls"
         asyncHttpClient.get(URL, object : FileAsyncHttpResponseHandler(this) {
             override fun onFailure(statusCode: Int, headers: Array<Header>, throwable: Throwable, file: File) {
@@ -92,7 +92,7 @@ class AdapterGoodsAmount : RecyclerView.Adapter<AdapterGoodsAmount.GoodsHolder>(
         })
 
         //for ()
-        notifyDataSetChanged()
-    }
+        //notifyDataSetChanged()
+    }*/
 
 }
