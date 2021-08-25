@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/news">
+
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.app_1.News"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/catalog"
+        android:name="com.example.app_1.Catalog"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/purchases"
+        android:name="com.example.app_1.Purchases"
+        android:label="fragment_purchases"
+        tools:layout="@layout/fragment_purchases" />
+    <fragment
+        android:id="@+id/pricelist"
+        android:name="com.example.app_1.Pricelist"
+        android:label="fragment_pricelist"
+        tools:layout="@layout/fragment_pricelist" />
+    <fragment
+        android:id="@+id/leftovers"
+        android:name="com.example.app_1.Leftovers"
+        android:label="fragment_leftovers"
+        tools:layout="@layout/fragment_leftovers" />
+</navigation>

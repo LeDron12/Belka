@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/newsButton"
+        android:id="@+id/news"
         android:icon="@drawable/ic_news"
         android:title="Новости"
         android:orderInCategory="1"/>
@@ -11,17 +11,17 @@
         android:title="Каталог"
         android:orderInCategory="2"/>
     <item
-        android:id="@+id/myOrders"
+        android:id="@+id/purchases"
         android:icon="@drawable/ic_orders"
         android:title="Мои заказы"
         android:orderInCategory="3"/>
     <item
-        android:id="@+id/excelPrices"
+        android:id="@+id/pricelist"
         android:icon="@drawable/ic_prices"
         android:title="Прайс лист"
         android:orderInCategory="4"/>
     <item
-        android:id="@+id/excelLeftovers"
+        android:id="@+id/leftovers"
         android:icon="@drawable/ic_leftovers"
         android:orderInCategory="5"
         android:title="Остатки" />

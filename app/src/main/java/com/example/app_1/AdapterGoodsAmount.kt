@@ -14,6 +14,8 @@ import jxl.Workbook
 import jxl.WorkbookSettings
 import jxl.read.biff.BiffException
 import java.io.File
+import java.io.IOException
+import kotlin.coroutines.coroutineContext
 
 
 class AdapterGoodsAmount : RecyclerView.Adapter<AdapterGoodsAmount.GoodsHolder>() {
@@ -47,52 +49,7 @@ class AdapterGoodsAmount : RecyclerView.Adapter<AdapterGoodsAmount.GoodsHolder>(
 
     override fun getItemCount(): Int {
         return 5//productList.size
+        //TODO: call fillList function from ActivityMainLenta class
     }
-
-    // TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO TO DO
-    /*fun fillList(){
-        val URL : String = "https://github.com/LeDron12/Wolta/blob/master/Остатки.xls"
-        asyncHttpClient.get(URL, object : FileAsyncHttpResponseHandler(this) {
-            override fun onFailure(statusCode: Int, headers: Array<Header>, throwable: Throwable, file: File) {
-               Toast.makeText(
-                   this@MainActivity,
-                    "Error in Downloading Excel File",
-                    Toast.LENGTH_SHORT
-                ).show()
-                wait.setVisibility(View.GONE)
-                progressBar.setVisibility(View.GONE)
-            }
-
-            override fun onSuccess(statusCode: Int, headers: Array<Header>, file: File) {
-                val ws = WorkbookSettings()
-                ws.gcDisabled = true
-                if (file != null) {
-                    //text.setText("Success, DO something with the file.");
-                    wait.setVisibility(View.GONE)
-                    progressBar.setVisibility(View.GONE)
-                    try {
-                        workbook = Workbook.getWorkbook(file)
-                        val sheet: Sheet = workbook.getSheet(0)
-                        //Cell[] row = sheet.getRow(1);
-                        //text.setText(row[0].getContents());
-                        for (i in 0 until sheet.rows) {
-                            val row = sheet.getRow(i)
-                            storyTitle.add(row[0].contents)
-                            storyContent.add(row[1].contents)
-                            thumbImages.add(row[2].contents)
-                        }
-                        showData()
-                    } catch (e: IOException) {
-                        e.printStackTrace()
-                    } catch (e: BiffException) {
-                        e.printStackTrace()
-                    }
-                }
-            }
-        })
-
-        //for ()
-        //notifyDataSetChanged()
-    }*/
 
 }
