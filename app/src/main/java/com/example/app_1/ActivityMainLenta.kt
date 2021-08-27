@@ -2,6 +2,7 @@ package com.example.app_1
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 
@@ -11,6 +12,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app_1.databinding.ActivityMainLentaBinding
 import com.example.app_1.databinding.FragmentLeftoversBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.loopj.android.http.AsyncHttpClient
@@ -27,7 +29,7 @@ import java.io.IOException
 class ActivityMainLenta : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        Log.d("PRODUCTS", "лента")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_lenta)
 
@@ -40,8 +42,7 @@ class ActivityMainLenta : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemReselectedListener {
             when (it.itemId) {
                 R.id.leftovers -> {
-                    val frag = Leftovers()
-                    loadFragment(Leftovers(/*this@ActivityMainLenta*/))
+                    loadFragment(Leftovers())
                     return@setOnNavigationItemReselectedListener
                 }
                 R.id.catalog -> {
@@ -74,56 +75,7 @@ class ActivityMainLenta : AppCompatActivity() {
         transaction.commit()
     }
 
-    val asyncHttpClient : AsyncHttpClient = AsyncHttpClient()
-    lateinit var workbook : Workbook
-
-    //TODO: Andrey K.
-    /*
-    fun fillList(){
-        val URL : String = "https://github.com/LeDron12/Wolta/blob/master/Остатки.xls"
-        asyncHttpClient.get(URL, object : FileAsyncHttpResponseHandler(this@ActivityMainLenta) {
-            override fun onFailure(statusCode: Int, headers: Array<Header>, throwable: Throwable, file: File) {
-                Toast.makeText(
-                    this@ActivityMainLenta,
-                     "Error in Downloading Excel File",
-                     Toast.LENGTH_SHORT
-                    ).show()
-                //wait.setVisibility(View.GONE)
-                //progressBar.setVisibility(View.GONE)
-            }
-
-            override fun onSuccess(statusCode: Int, headers: Array<Header>, file: File) {
-                val ws = WorkbookSettings()
-                ws.gcDisabled = true
-                if (file != null) {
-                    //text.setText("Success, DO something with the file.");
-                    //wait.setVisibility(View.GONE)
-                    //progressBar.setVisibility(View.GONE)
-                    try {
-                        workbook = Workbook.getWorkbook(file)
-                        val sheet: Sheet = workbook.getSheet(0)
-                        //Cell[] row = sheet.getRow(1);
-                        //text.setText(row[0].getContents());
-                        //TODO: Переделать чтобы считывать по rows и запонять массив экземплярами ProductData
-                        for (i in 0 until sheet.rows) { //идем по рядам (начнем со 2ого тк 0 и 1 - headers)
-                            val row = sheet.getRow(i)
-                            storyTitle.add(row[0].contents) // колонка 1 в ряду (storyTitle - массив(не создан))
-                            storyContent.add(row[1].contents) // колонка 2 в ряду
-                            thumbImages.add(row[2].contents)
-                        }
-                        showData()
-                    } catch (e: IOException) {
-                        e.printStackTrace()
-                    } catch (e: BiffException) {
-                        e.printStackTrace()
-                    }
-                }
-            }
-        })
-
-        //for ()
-        //notifyDataSetChanged()
-    }
-    */
+    //val asyncHttpClient : AsyncHttpClient = AsyncHttpClient()
+    //lateinit var workbook : Workbook
 
 }
